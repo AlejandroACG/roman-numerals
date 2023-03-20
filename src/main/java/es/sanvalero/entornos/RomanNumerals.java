@@ -28,6 +28,9 @@ public class RomanNumerals {
         if (number == 8) {
             romanNumeral = "VIII";
         }
+        if (number == 9) {
+            romanNumeral = "IX";
+        }
 
         return romanNumeral;
     }
