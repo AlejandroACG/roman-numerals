@@ -2,15 +2,21 @@ package es.sanvalero.entornos;
 
 public class RomanNumerals {
     public static String convert (int number) {
-        String romanOnes = null;
-        String romanNumeral = null;
+        String romanOnes = "";
+        String romanNumber = "";
+        String romanTens = "";
 
-        if (number <= 10) {
+        if (number <= 0 || number > 3000) {
+            romanNumber = "Invalid number";
+        } else if (number < 10) {
             romanOnes = onesConversion(number);
-            romanNumeral = romanOnes;
+            romanNumber = romanOnes;
+        } else if (number < 100) {
+            romanOnes = onesConversion(Integer.parseInt(String.valueOf(String.valueOf(number).charAt(1))));
+            romanTens = tensConversion(Integer.parseInt(String.valueOf(String.valueOf(number).charAt(0))));
+            romanNumber = romanTens + romanOnes;
         }
-
-        return romanNumeral;
+        return romanNumber;
     }
 
     private static String onesConversion(int ones) {
@@ -31,9 +37,16 @@ public class RomanNumerals {
             romanOnes = "VII";
         } else if (ones == 8) {
             romanOnes = "VIII";
-        } else {
+        } else if (ones == 9) {
             romanOnes = "IX";
+        } else {
+            romanOnes = "";
         }
         return romanOnes;
+    }
+    private static String tensConversion(int tens) {
+        String romanTens = "";
+
+        return romanTens;
     }
 }
