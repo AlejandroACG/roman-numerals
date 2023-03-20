@@ -73,6 +73,9 @@ public class RomanNumerals {
     }
     private static String hundredsConversion(int hundreds) {
         String romanHundreds = "";
+        if (hundreds == 1) {
+            romanHundreds = "C";
+        }
 
         return romanHundreds;
     }
