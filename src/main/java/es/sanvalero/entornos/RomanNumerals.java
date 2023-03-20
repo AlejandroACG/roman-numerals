@@ -62,6 +62,8 @@ public class RomanNumerals {
             romanTens = "LXX";
         } else if (tens == 8) {
             romanTens = "LXXX";
+        } else if (tens == 9) {
+            romanTens = "XC";
         }
 
         return romanTens;
