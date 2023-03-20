@@ -22,7 +22,7 @@ public class RomanNumeralsShould {
         assertEquals(expectedOutput, new RomanNumerals().convert(input));
     }
     @ParameterizedTest
-    @CsvSource({"1000, M", "1100, MC", "1110, MCX", "1111, MCXI", "2000, MM"})
+    @CsvSource({"1000, M", "1100, MC", "1110, MCX", "1111, MCXI", "2000, MM", "3000, MMM"})
     void thousandsToRomanNumerals(int input, String expectedOutput) {
         assertEquals(expectedOutput, new RomanNumerals().convert(input));
     }
