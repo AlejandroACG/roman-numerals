@@ -54,6 +54,8 @@ public class RomanNumerals {
             romanTens = "XXX";
         } else if (tens == 4) {
             romanTens = "XL";
+        } else if (tens == 5) {
+            romanTens = "L";
         }
 
         return romanTens;
