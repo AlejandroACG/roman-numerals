@@ -12,7 +12,7 @@ public class RomanNumeralsShould {
        assertEquals(expectedOutput, new RomanNumerals().convert(input));
     }
     @ParameterizedTest
-    @CsvSource({"10, X", "11, XI", "20, XX", "30, XXX", "40, XL", "50, L", "60, LX"})
+    @CsvSource({"10, X", "11, XI", "20, XX", "30, XXX", "40, XL", "50, L", "60, LX", "70, LXX"})
     void tensToRomanNumerals(int input, String expectedOutput) {
         assertEquals(expectedOutput, new RomanNumerals().convert(input));
     }
