@@ -14,7 +14,7 @@ public class RomanNumerals {
         } else if (number < 100) {
             romanOnes = onesConversion(Integer.parseInt(String.valueOf(String.valueOf(number).charAt(1))));
             romanTens = tensConversion(Integer.parseInt(String.valueOf(String.valueOf(number).charAt(0))));
-            romanNumber = romanTens + romanOnes;
+            romanNumber = romanTens;
         }
         return romanNumber;
     }
@@ -46,6 +46,9 @@ public class RomanNumerals {
     }
     private static String tensConversion(int tens) {
         String romanTens = "";
+        if (tens == 1) {
+            romanTens = "X";
+        }
 
         return romanTens;
     }
