@@ -103,6 +103,9 @@ public class RomanNumerals {
     }
     private static String thousandsConversion(int thousands) {
         String romanThousands = "";
+        if (thousands == 1) {
+            romanThousands = "M";
+        }
 
         return romanThousands;
     }
