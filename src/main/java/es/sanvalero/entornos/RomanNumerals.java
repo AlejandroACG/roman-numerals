@@ -20,7 +20,7 @@ public class RomanNumerals {
             romanOnes = onesConversion(Integer.parseInt(String.valueOf(String.valueOf(number).charAt(2))));
             romanTens = tensConversion(Integer.parseInt(String.valueOf(String.valueOf(number).charAt(1))));
             romanHundreds = hundredsConversion(Integer.parseInt(String.valueOf(String.valueOf(number).charAt(0))));
-            romanNumber = romanHundreds;
+            romanNumber = romanHundreds + romanTens;
         }
         return romanNumber;
     }
