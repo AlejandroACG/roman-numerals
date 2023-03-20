@@ -7,4 +7,8 @@ public class RomanNumeralsShould {
     void romanNumeralsConvert_1() {
         assertEquals("I", new RomanNumerals().convert(1));
     }
+    @Test
+    void romanNumeralsConvert_2() {
+        assertEquals("II", new RomanNumerals().convert(2));
+    }
 }
