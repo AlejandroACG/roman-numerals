@@ -6,7 +6,7 @@ public class Main {
         Scanner keyboard = new Scanner(System.in);
         boolean exit = false;
         do {
-            System.out.print("Number to convert into roman numerals: ");
+            System.out.print("Number (from 1 to 3000) to convert into roman numerals: ");
             int number = keyboard.nextInt();
             System.out.println(RomanNumerals.convert(number));
             System.out.print("Do you want to convert another number? (Y/N) ");
