@@ -48,6 +48,8 @@ public class RomanNumerals {
         String romanTens = "";
         if (tens == 1) {
             romanTens = "X";
+        } else if (tens == 2) {
+            romanTens = "XX";
         }
 
         return romanTens;
