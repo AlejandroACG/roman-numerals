@@ -13,6 +13,9 @@ public class RomanNumerals {
         if (number == 3) {
             romanNumeral = "III";
         }
+        if (number == 4) {
+            romanNumeral = "IV";
+        }
 
         return romanNumeral;
     }
