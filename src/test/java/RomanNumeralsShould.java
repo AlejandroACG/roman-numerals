@@ -16,4 +16,9 @@ public class RomanNumeralsShould {
     void tensToRomanNumerals(int input, String expectedOutput) {
         assertEquals(expectedOutput, new RomanNumerals().convert(input));
     }
+    @ParameterizedTest
+    @CsvSource({"100, C"})
+    void hundredsToRomanNumerals(int input, String expectedOutput) {
+        assertEquals(expectedOutput, new RomanNumerals().convert(input));
+    }
 }
