@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RomanNumeralsShould {
     @ParameterizedTest
-    @CsvSource({"1, I", "2, II", "3, III", "4, IV", "5, V"})
+    @CsvSource({"1, I", "2, II", "3, III", "4, IV", "5, V", "6, VI"})
     void onesToRomanNumerals(int input, String expectedOutput) {
        assertEquals(expectedOutput, new RomanNumerals().convert(input));
     }
