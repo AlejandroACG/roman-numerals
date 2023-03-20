@@ -26,7 +26,7 @@ public class RomanNumerals {
             romanNumeral = "VII";
         }
         if (number == 8) {
-            romanNumeral = "VIII"
+            romanNumeral = "VIII";
         }
 
         return romanNumeral;
