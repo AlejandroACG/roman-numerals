@@ -17,7 +17,7 @@ public class RomanNumeralsShould {
         assertEquals(expectedOutput, new RomanNumerals().convert(input));
     }
     @ParameterizedTest
-    @CsvSource({"100, C", "110, CX", "111, CXI", "200, CC"})
+    @CsvSource({"100, C", "110, CX", "111, CXI", "200, CC", "300, CCC"})
     void hundredsToRomanNumerals(int input, String expectedOutput) {
         assertEquals(expectedOutput, new RomanNumerals().convert(input));
     }
