@@ -107,6 +107,8 @@ public class RomanNumerals {
             romanThousands = "M";
         } else if (thousands == 2) {
             romanThousands = "MM";
+        } else {
+            romanThousands = "MMM";
         }
 
         return romanThousands;
