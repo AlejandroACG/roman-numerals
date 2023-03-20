@@ -105,6 +105,8 @@ public class RomanNumerals {
         String romanThousands = "";
         if (thousands == 1) {
             romanThousands = "M";
+        } else if (thousands == 2) {
+            romanThousands = "MM";
         }
 
         return romanThousands;
