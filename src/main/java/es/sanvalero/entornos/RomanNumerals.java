@@ -22,6 +22,9 @@ public class RomanNumerals {
         if (number == 6) {
             romanNumeral = "VI";
         }
+        if (number == 7) {
+            romanNumeral = "VII";
+        }
 
         return romanNumeral;
     }
