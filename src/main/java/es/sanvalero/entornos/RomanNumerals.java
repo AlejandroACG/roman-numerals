@@ -79,6 +79,8 @@ public class RomanNumerals {
             romanHundreds = "CC";
         } else if (hundreds == 3) {
             romanHundreds = "CCC";
+        } else if (hundreds == 4) {
+            romanHundreds = "CD";
         }
 
         return romanHundreds;
