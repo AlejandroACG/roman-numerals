@@ -1,18 +1,14 @@
 import es.sanvalero.entornos.RomanNumerals;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RomanNumeralsShould {
-    @Test
-    void romanNumeralsConvert_1() {
-        assertEquals("I", new RomanNumerals().convert(1));
-    }
-    @Test
-    void romanNumeralsConvert_2() {
-        assertEquals("II", new RomanNumerals().convert(2));
-    }
-    @Test
-    void romanNumeralsConvert_3() {
-        assertEquals("III", new RomanNumerals().convert(3));
+    @ParameterizedTest
+    @CsvSource({"1, I", "2, II", "3, III", "4, IV"})
+    void onesToRomanNumerals(int input, String expectedOutput) {
+       assertEquals(expectedOutput, new RomanNumerals().convert(input));
     }
 }
