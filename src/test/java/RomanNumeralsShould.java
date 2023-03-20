@@ -21,4 +21,9 @@ public class RomanNumeralsShould {
     void hundredsToRomanNumerals(int input, String expectedOutput) {
         assertEquals(expectedOutput, new RomanNumerals().convert(input));
     }
+    @ParameterizedTest
+    @CsvSource({"1000, M"})
+    void thousandsToRomanNumerals(int input, String expectedOutput) {
+        assertEquals(expectedOutput, new RomanNumerals().convert(input));
+    }
 }
