@@ -75,6 +75,8 @@ public class RomanNumerals {
         String romanHundreds = "";
         if (hundreds == 1) {
             romanHundreds = "C";
+        } else if (hundreds == 2) {
+            romanHundreds = "CC";
         }
 
         return romanHundreds;
