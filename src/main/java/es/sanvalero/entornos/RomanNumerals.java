@@ -6,6 +6,7 @@ public class RomanNumerals {
         String romanNumber = "";
         String romanTens = "";
         String romanHundreds = "";
+        String romanThousands = "";
 
         if (number <= 0 || number > 3000) {
             romanNumber = "Invalid number";
@@ -21,6 +22,12 @@ public class RomanNumerals {
             romanTens = tensConversion(Integer.parseInt(String.valueOf(String.valueOf(number).charAt(1))));
             romanHundreds = hundredsConversion(Integer.parseInt(String.valueOf(String.valueOf(number).charAt(0))));
             romanNumber = romanHundreds + romanTens + romanOnes;
+        } else {
+            romanOnes = onesConversion(Integer.parseInt(String.valueOf(String.valueOf(number).charAt(3))));
+            romanTens = tensConversion(Integer.parseInt(String.valueOf(String.valueOf(number).charAt(2))));
+            romanHundreds = hundredsConversion(Integer.parseInt(String.valueOf(String.valueOf(number).charAt(1))));
+            romanThousands = thousandsConversion(Integer.parseInt(String.valueOf(String.valueOf(number).charAt(0))));
+            romanNumber = romanThousands;
         }
         return romanNumber;
     }
@@ -92,7 +99,11 @@ public class RomanNumerals {
         } else if (hundreds == 9) {
             romanHundreds = "CM";
         }
-
         return romanHundreds;
+    }
+    private static String thousandsConversion(int thousands) {
+        String romanThousands = "";
+
+        return romanThousands;
     }
 }
