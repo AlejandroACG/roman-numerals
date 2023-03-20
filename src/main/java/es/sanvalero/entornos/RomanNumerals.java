@@ -10,6 +10,9 @@ public class RomanNumerals {
         if (number == 2) {
             romanNumeral = "II";
         }
+        if (number == 3) {
+            romanNumeral = "III";
+        }
 
         return romanNumeral;
     }
