@@ -11,4 +11,8 @@ public class RomanNumeralsShould {
     void romanNumeralsConvert_2() {
         assertEquals("II", new RomanNumerals().convert(2));
     }
+    @Test
+    void romanNumeralsConvert_3() {
+        assertEquals("III", new RomanNumerals().convert(3));
+    }
 }
