@@ -83,6 +83,8 @@ public class RomanNumerals {
             romanHundreds = "CD";
         } else if (hundreds == 5) {
             romanHundreds = "D";
+        } else if (hundreds == 6) {
+            romanHundreds = "DC";
         }
 
         return romanHundreds;
