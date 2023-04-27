@@ -24,7 +24,7 @@ jobs:
     - name: Run Tests
       run: mvn -B test
     - name: Super Linter
-      uses: github/super-linter@v4
+      uses: github/super-linter@v5
       env:
         VALIDATE_ALL_CODEBASE: true
         DEFAULT_BRANCH: main
