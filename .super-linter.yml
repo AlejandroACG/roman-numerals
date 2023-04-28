@@ -1,2 +1,4 @@
 google-java-format:
-  enabled: false
+  enabled: true
+  level: error
+  disable: true
