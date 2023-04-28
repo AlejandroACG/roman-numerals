@@ -5,7 +5,7 @@ package es.sanvalero.entornos;
  * that converts an integer number into a Roman numeral.
  */
 
-public class RomanNumerals {
+public final class RomanNumerals {
     private RomanNumerals() { }
     /**
      Returns a new instance of RomanNumerals class. This method is used
@@ -17,7 +17,8 @@ public class RomanNumerals {
         return new RomanNumerals();
     }
     /**
-     Constante que define el valor máximo permitido para la conversión a números romanos.
+     Constante que define el valor máximo permitido
+     para la conversión a números romanos.
      */
     private static final int THREE_THOUSAND = 3000;
     /**

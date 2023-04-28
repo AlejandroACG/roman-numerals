@@ -1,3 +1,4 @@
+---
 name: Ejercicio 4
 
 on:
@@ -10,23 +11,22 @@ jobs:
     name: Ejercicio 4
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-    - name: Set Up
-      uses: actions/setup-java@v3
-      with:
-        java-version: 17
-        cache: maven
-        distribution: 'temurin'
-    - name: Build With Maven
-      run: mvn -B package
-    - name: Run Tests
-      run: mvn -B test
-    - name: Super Linter
-      uses: github/super-linter@v5
-      env:
-        VALIDATE_ALL_CODEBASE: true
-        DEFAULT_BRANCH: main
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set Up
+        uses: actions/setup-java@v3
+        with:
+          java-version: 17
+          cache: maven
+          distribution: 'temurin'
+      - name: Build With Maven
+        run: mvn -B package
+      - name: Run Tests
+        run: mvn -B test
+      - name: Super Linter
+        uses: github/super-linter@v5
+        env:
+          VALIDATE_ALL_CODEBASE: true
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
