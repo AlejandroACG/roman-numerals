@@ -2,13 +2,15 @@ package es.sanvalero.entornos;
 
 import java.util.Scanner;
 
-/** The Main class provides the entry point for the Roman numeral converter program. */
+/** The Main class provides the entry point for the Roman numeral
+ * converter program. */
 public final class Main {
-  private Main() {}
+  private Main() { }
 
   /**
-   * Main method that reads an integer number from user input and converts it to its Roman numeral
-   * equivalent using the RomanNumerals.convert() method.
+   * Main method that reads an integer number from user input
+   * and converts it to its Roman numeral equivalent
+   * using the RomanNumerals.convert() method.
    *
    * @param args an array of command-line arguments passed to the program.
    */

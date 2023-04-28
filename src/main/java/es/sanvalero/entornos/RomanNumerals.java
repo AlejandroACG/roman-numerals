@@ -1,14 +1,15 @@
 package es.sanvalero.entornos;
 
 /**
- * The RomanNumerals class contains a static method that converts an integer number into a Roman
- * numeral.
+ * The RomanNumerals class contains a static method that
+ * converts an integer number into a Roman numeral.
  */
 public final class RomanNumerals {
-  private RomanNumerals() {}
+  private RomanNumerals() { }
   /**
-   * Returns a new instance of RomanNumerals class. This method is used so the constructor of
-   * RomanNumerals is kept private and only accessible through this method.
+   * Returns a new instance of RomanNumerals class.
+   * This method is used so the constructor of RomanNumerals
+   * is kept private and only accessible through this method.
    *
    * @return a new instance of the RomanNumerals class.
    */
