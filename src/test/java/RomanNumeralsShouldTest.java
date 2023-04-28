@@ -26,7 +26,8 @@ public final class RomanNumeralsShouldTest {
     @ParameterizedTest
     @CsvSource({"1000, M", "1100, MC", "1110, MCX", "1111, MCXI", "2000, MM",
             "3000, MMM"})
-    void thousandsToRomanNumerals(final int input, final String expectedOutput) {
+    void thousandsToRomanNumerals(final int input,
+                                  final String expectedOutput) {
         assertEquals(expectedOutput, new RomanNumerals().convert(input));
     }
 }

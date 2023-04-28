@@ -5,20 +5,20 @@ package es.sanvalero.entornos;
  */
 
 public class RomanNumerals {
-    public RomanNumerals() {}
-    private static final int threeThousand = 3000;
-    private static final int thousand = 1000;
-    private static final int nineHundred = 900;
-    private static final int fiveHundred = 500;
-    private static final int fourHundred = 400;
-    private static final int hundred = 100;
-    private static final int ninety = 90;
-    private static final int fifty = 50;
-    private static final int fourty = 40;
-    private static final int ten = 10;
-    private static final int nine = 9;
-    private static final int five = 5;
-    private static final int four = 4;
+    public RomanNumerals() { }
+    private static final int THREE_THOUSAND = 3000;
+    private static final int THOUSAND = 1000;
+    private static final int NINE_HUNDRED = 900;
+    private static final int FIVE_HUNDRED = 500;
+    private static final int FOUR_HUNDRED = 400;
+    private static final int HUNDRED = 100;
+    private static final int NINETY = 90;
+    private static final int FIFTY = 50;
+    private static final int FOURTY = 40;
+    private static final int TEN = 10;
+    private static final int NINE = 9;
+    private static final int FIVE = 5;
+    private static final int FOUR = 4;
     /**
      * Converts an integer number into a Roman numeral.
      *
@@ -27,13 +27,14 @@ public class RomanNumerals {
      */
 
     public static String convert(int number) {
-        int[] arabicNumbers = {thousand, nineHundred, fiveHundred, fourHundred, hundred, ninety, fifty, fourty,
-                ten, nine, five, four, 1};
+        int[] arabicNumbers = {THOUSAND, NINE_HUNDRED, FIVE_HUNDRED,
+                FOUR_HUNDRED, HUNDRED, NINETY, FIFTY, FOURTY,
+                TEN, NINE, FIVE, FOUR, 1};
         String[] romanNumerals = {"M", "CM", "D", "CD", "C", "XC", "L", "XL",
                 "X", "IX", "V", "IV", "I"};
         StringBuilder romanNumber = new StringBuilder();
 
-        if (number <= 0 || number > threeThousand) {
+        if (number <= 0 || number > THREE_THOUSAND) {
             System.out.print("Invalid number.");
         } else {
             for (int i = 0; i < arabicNumbers.length; i++) {
