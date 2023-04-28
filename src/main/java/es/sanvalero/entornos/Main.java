@@ -1,5 +1,4 @@
 package es.sanvalero.entornos;
-
 import java.util.Scanner;
 
 /** The Main class provides the entry point for the Roman numeral
