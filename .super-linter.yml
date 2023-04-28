@@ -1,5 +1,0 @@
----
-google-java-format:
-  enabled: true
-  level: error
-  disable: true
