@@ -23,7 +23,12 @@ jobs:
       - name: Build With Maven
         run: mvn -B package
       - name: Run Tests
-        run: mvn -B test
+        run: |
+          mvn -B test
+          if [ $? -ne 0 ]; then
+          echo "Tests failed"
+          exit 1
+          fi
       - name: Super Linter
         uses: github/super-linter@v5
         env:
@@ -31,3 +36,6 @@ jobs:
           VALIDATE_GOOGLE_JAVA_FORMAT: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: always()
+        with:
+          fail_on_errors: true
