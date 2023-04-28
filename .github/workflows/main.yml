@@ -3,9 +3,9 @@ name: Ejercicio 4
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 jobs:
   build:
     name: Ejercicio 4
