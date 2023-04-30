@@ -24,7 +24,7 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_GOOGLE_JAVA_FORMAT: false
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROMOTE_TO_MAIN_TOKEN }}
       - name: Promote to main
         if: success()
         uses: peaceiris/actions-gh-pages@v3
