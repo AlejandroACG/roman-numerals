@@ -29,6 +29,6 @@ jobs:
         if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
-          token: ${{ secrets.PROMOTE_TO_MAIN_TOKEN }}
+          github_token: ${{ secrets.PROMOTE_TO_MAIN_TOKEN }}
           publish_dir: .
           publish_branch: main
